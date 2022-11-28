@@ -11,8 +11,10 @@ from nycAPP.boroughs import boroughs
 
 class CityView(View):
     def get(self, request,):
-        print(boroughs.keys())
-        return render(request=request, template_name='city.html', context={'boroughs': boroughs.keys()})
+        
+        return render(request=request, 
+                        template_name='city.html',
+                         context={'boroughs': boroughs.keys()})
 
 
 
