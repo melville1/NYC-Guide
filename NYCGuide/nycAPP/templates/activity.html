@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body style="background:url(https://media.cntraveler.com/photos/5a9d825ad363c34048b3639a/16:9/w_2560%2Cc_limit/GettyImages-640006562.jpg); background-repeat: no-repeat;background-size: cover; color:black">
     <h1>{{ activity | title }}</h1>
 
-<ul>
+<ul style="list-style:none">
     {% for venue in venues %}
     <li>
-        <a href="{% url 'venue' borough activity venue %} "
+        <a style="color:black; font-size: x-large;" href="{% url 'venue' borough activity venue %} "
             >{{ venue|title }}</a
         >
     </li>

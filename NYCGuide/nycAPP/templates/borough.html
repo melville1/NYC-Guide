@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body style="background:url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/NYC_Downtown_Manhattan_Skyline_seen_from_Paulus_Hook_2019-12-20_IMG_7347_FRD_%28cropped%29.jpg/1200px-NYC_Downtown_Manhattan_Skyline_seen_from_Paulus_Hook_2019-12-20_IMG_7347_FRD_%28cropped%29.jpg); background-repeat: no-repeat;background-size: cover; color:white">
     <h1>{{ borough | title }}</h1>
 
-<ul>
+<ul style="list-style:none">
     {% for activity in activities %}
     <li>
-        <a href="{% url 'activity' borough activity %} "
+        <a style="color:white; font-size:x-large;" href="{% url 'activity' borough activity %} "
             >{{ activity|title }}</a
         >
     </li>
