@@ -17,17 +17,17 @@ This is a project completed for Justice Through Code by Melvin and Milad (mostly
 
 <ol>
 
-    <li>Create the virtual environment with <em>py -m venv venv</em></li>
-    <li>Activate the virtual environment with <em>venv\scripts\activate (on Windows)</em></li>
-    <li>Create a requirements file with <em>pip freeze > requirements.txt</em></li>
-    <li>Create a Django project with <em>django-admin startproject NYCGuide</em></li>
-    <li>Create the app within the project with <em>py manage.py startapp nycAPP</em></li>
-    <li>Install the app in the NYCGuide <em>settings.py</em> file</li>
-    <li>Create a <em>urls.py</em> file inside of nycAPP</li>
-    <li>Include the nycAPP <em>urls.py</em> path in the NYCGuide <em>urls.py</em> file</li>
-    <li>Create views and templates and <em>make sure they work</em></li>
-    <li>Run the server with <em>py manage.py runserver</em></li>
-    <li>Try it out, and most importantly, <em>have fun!</em></li>
+<li>Create the virtual environment with <em>py -m venv venv</em></li>
+<li>Activate the virtual environment with <em>venv\scripts\activate (on Windows)</em></li>
+<li>Create a requirements file with <em>pip freeze > requirements.txt</em></li>
+<li>Create a Django project with <em>django-admin startproject NYCGuide</em></li>
+<li>Create the app within the project with <em>py manage.py startapp nycAPP</em></li>
+<li>Install the app in the NYCGuide <em>settings.py</em> file</li>
+<li>Create a <em>urls.py</em> file inside of nycAPP</li>
+<li>Include the nycAPP <em>urls.py</em> path in the NYCGuide <em>urls.py</em> file</li>
+<li>Create views and templates and <em>make sure they work</em></li>
+<li>Run the server with <em>py manage.py runserver</em></li>
+<li>Try it out, and most importantly, <em>have fun!</em></li>
 
 </ol>
 
