@@ -18,7 +18,7 @@ from django.urls import path, include
 from django.http import HttpResponse
 
 
-
+# here we connect all the urls coming from your app
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('nycAPP.urls')),

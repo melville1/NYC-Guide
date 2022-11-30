@@ -1,3 +1,5 @@
+# This is where the images and descriptions are stored. This is the dictionary.
+
 boroughs = {
     'brooklyn': {
         'Places to Eat': {

@@ -1,6 +1,9 @@
+
+# imports are made to connect the borough dictionary and the View class coming from django
+
 from django.shortcuts import render
 
-from django.http import HttpResponse
+
 from django.views import View
 from nycAPP.boroughs import boroughs
 # Create your views here.
@@ -8,7 +11,8 @@ from nycAPP.boroughs import boroughs
 
 
 
-
+# this is the homepage where all the boroughs will be displayed. 
+# the context variable is sent to the city.html template
 class CityView(View):
     def get(self, request,):
         
@@ -17,7 +21,9 @@ class CityView(View):
                          context={'boroughs': boroughs.keys()})
 
 
-
+# this borough view will display the activities of each borough
+# this view takes in borough argument 
+#the context vairiable will be passed to the borough.html template
 class BoroughView(View):
     def get(self, request, borough):
         return render(
@@ -26,7 +32,8 @@ class BoroughView(View):
             context={'borough': borough, 'activities': boroughs[borough].keys()},
         )
 
-
+# this activity view will display all venues
+# this view takes in the borough and activity required
 class ActivityView(View):
     def get(self, request, borough, activity):
         return render(
@@ -37,7 +44,7 @@ class ActivityView(View):
                        'venues': boroughs[borough][activity].keys() }
         )
 
-
+# this view displayes the image and description of a particular venue.
 class VenueView(View):
     def get(self,request, borough, activity, venue):
         return render(
